@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>签字插件</title>
+  <script type="module" crossorigin src="./assets/index.e38d3ac3.js"></script>
+  <link rel="stylesheet" href="./assets/index.e1a8429e.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="config-header">
+      <h4 class="config-title">签字插件配置</h4>
+    </div>
+    <form id="configForm" class="config-form">
+      <div class="config-section">
+        <div class="section-header">
+          <h5 class="section-title">基础配置</h5>
+        </div>
+        <div class="section-content">
+          <div class="mb-3">
+            <label for="tableSelect" class="form-label">选择数据表</label>
+            <select id="tableSelect" class="form-select" required>
+              <option value="">请选择数据表</option>
+            </select>
+          </div>
+        <div class="mb-3">
+            <label class="form-label">选择要展示的字段（可多选）</label>
+            <div id="fieldCheckboxes" class="field-checkboxes">
+              <div class="text-muted">请先选择数据表</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="config-section">
+        <div class="section-header">
+          <h5 class="section-title">服务器配置</h5>
+        </div>
+        <div class="section-content">
+          <div class="mb-3">
+            <label for="tokenInput" class="form-label">授权码 (PersonalBaseToken)</label>
+            <input type="text" id="tokenInput" class="form-control" placeholder="请输入授权码" required />
+            <small class="form-text text-muted">可在多维表格设置中获取授权码</small>
+        </div>
+        <div class="mb-3">
+            <label for="serverUrl" class="form-label">服务器地址</label>
+            <input type="text" id="serverUrl" class="form-control" value="https://58material.icu" required />
+          </div>
+        </div>
+        </div>
+      
+      <div class="config-actions">
+        <button class="btn btn-primary w-100" type="submit" id="submitBtn">
+          开始配置
+        </button>
+      </div>
+      </form>
+    <div id="statusMessage" class="status-message" style="display: none;"></div>
+  </main>
+  
+</body>
+
+</html>
