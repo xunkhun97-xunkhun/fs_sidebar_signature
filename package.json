@@ -1,0 +1,33 @@
+{
+  "name": "signature-plugin",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "多维表格签名插件",
+  "scripts": {
+    "dev": "vite",
+    "start": "npm run dev",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "lark",
+    "base",
+    "signature",
+    "plugin"
+  ],
+  "author": "",
+  "output": "dist",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.16",
+    "sass": "^1.63.6",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.4"
+  },
+  "dependencies": {
+    "@lark-base-open/js-sdk": "^0.5.0",
+    "bootstrap": "^5.3.0",
+    "jquery": "^3.7.1",
+    "reset-css": "^5.0.1"
+  }
+}
